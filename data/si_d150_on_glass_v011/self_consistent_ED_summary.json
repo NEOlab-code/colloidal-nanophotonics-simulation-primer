@@ -1,0 +1,41 @@
+{
+  "model": "Mie electric-dipole polarizability renormalized by the reflected Gxx layered Green tensor",
+  "height_nm": 75.0,
+  "rows": [
+    {
+      "wavelength_nm": 497.0,
+      "a1_real": 0.8515704359880543,
+      "a1_imag": -0.1736904309295881,
+      "background_E_real": 0.4665386136608799,
+      "background_E_imag": -0.9748173543888181,
+      "Gref_xx_real_per_m": 82368.5783835319,
+      "Gref_xx_imag_per_m": 132.98010507075523,
+      "feedback_real": 0.021162347395124594,
+      "feedback_imag": 0.10461712367410513,
+      "self_consistent_amplitude_factor_abs": 1.0158343580079554,
+      "self_consistent_phase_deg": 6.100553017884485,
+      "prescribed_ED_total_nm2": 104055.14290064186,
+      "self_consistent_ED_total_nm2": 107376.525093892,
+      "power_ratio_self_to_prescribed": 1.0319194429094352,
+      "relative_power_change_percent": 3.191944290943516
+    },
+    {
+      "wavelength_nm": 611.0,
+      "a1_real": 0.11406771531930213,
+      "a1_imag": -0.31565225916303485,
+      "background_E_real": 0.5736272535889848,
+      "background_E_imag": -0.8364457492060717,
+      "Gref_xx_real_per_m": 101601.17279886003,
+      "Gref_xx_imag_per_m": 5358.623350738801,
+      "feedback_real": 0.05766506884401257,
+      "feedback_imag": 0.024343844281178296,
+      "self_consistent_amplitude_factor_abs": 1.0608398861793462,
+      "self_consistent_phase_deg": 1.4798234993749573,
+      "prescribed_ED_total_nm2": 20856.618253856046,
+      "self_consistent_ED_total_nm2": 23471.647415563533,
+      "power_ratio_self_to_prescribed": 1.1253812641090082,
+      "relative_power_change_percent": 12.53812641090082
+    }
+  ],
+  "limitation": "Representative ED-only self-consistency; magnetic feedback, ED-MD cross-coupling, higher multipoles, and finite contact geometry remain omitted."
+}

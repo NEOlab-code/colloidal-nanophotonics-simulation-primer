@@ -1,0 +1,47 @@
+{
+  "benchmark": "complete 3D voxel-DDA sphere benchmark",
+  "sphere": {
+    "diameter_nm": 150.0,
+    "particle_index": 1.5,
+    "host_index": 1.0
+  },
+  "source": "unit-amplitude x-polarized plane wave propagating along +z",
+  "open_boundary": "analytic outgoing free-space dyadic Green tensor; no PML",
+  "far_field": "direct coherent radiating-dipole sum and solid-angle quadrature",
+  "wavelength_grid_nm": [
+    500.0,
+    525.0,
+    550.0,
+    575.0,
+    600.0,
+    625.0,
+    650.0,
+    675.0,
+    700.0,
+    725.0,
+    750.0,
+    775.0,
+    800.0
+  ],
+  "spacings_nm": [
+    40.0,
+    32.5,
+    30.0,
+    22.5
+  ],
+  "finest": {
+    "spacing_nm": 22.5,
+    "voxel_count": 260,
+    "unknowns": 780,
+    "scattering_spectral_nrmse_percent": 0.7254837664860548,
+    "maximum_absorption_artifact_nm2": 2.2737367544323206e-12,
+    "maximum_relative_linear_residual": 7.620063540699032e-16
+  },
+  "limitations": "The example validates a complete 3D geometry/source/open-domain/far-field pipeline for DDA. Because radiation is imposed analytically, it does not test PML or a surface-based near-to-far transform; those remain separate method-specific contracts for FEM/FDTD/FIT.",
+  "software": {
+    "python": "3.13.5 (main, Jul 15 2026, 20:25:40) [GCC 14.2.0]",
+    "numpy": "2.3.5",
+    "pandas": "2.2.3",
+    "platform": "Linux-6.18.57-x86_64-with-glibc2.41"
+  }
+}

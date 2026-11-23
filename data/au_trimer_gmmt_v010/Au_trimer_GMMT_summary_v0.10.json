@@ -1,0 +1,87 @@
+{
+  "calculation_name": "Au nanosphere trimer generalized multiparticle Mie benchmark",
+  "geometry": {
+    "sphere_diameter_nm": 100.0,
+    "host_index": 1.333,
+    "baseline_equilateral_gap_nm": 10.0,
+    "near_contact_stress_test_gap_nm": 1.8,
+    "baseline_lmax": 10,
+    "baseline_unknown_count": 720
+  },
+  "baseline_features": {
+    "extinction_peaks": [
+      [
+        538.0,
+        71185.58731177228
+      ],
+      [
+        678.0,
+        121092.24948071994
+      ]
+    ],
+    "extinction_dip": [
+      576.0,
+      62454.00651272602
+    ],
+    "all_extinction_maxima": [
+      [
+        538.0,
+        71185.58731177228
+      ],
+      [
+        678.0,
+        121092.24948071994
+      ]
+    ],
+    "all_extinction_minima": [
+      [
+        576.0,
+        62454.00651272602
+      ]
+    ],
+    "all_scattering_maxima": [
+      [
+        682.0,
+        112481.02243144065
+      ]
+    ],
+    "all_scattering_minima": [],
+    "elapsed_s": 27.660406756000157,
+    "unknown_count": 720,
+    "max_global_extinction_closure_rel": 1.0785315910734467e-10,
+    "max_global_scattering_closure_rel": 9.220847777790956e-16
+  },
+  "baseline_l10_vs_l16_nrmse_percent": {
+    "extinction": 0.0067821974242647,
+    "scattering": 0.008952633596765,
+    "absorption": 0.0085068889698958
+  },
+  "near_contact_l14_to_l16_successive_nrmse_percent": {
+    "extinction": 0.7442411002509014,
+    "scattering": 0.9105235367260952,
+    "absorption": 0.7249505818670618
+  },
+  "near_contact_diagnostics_l16_650nm": {
+    "condition_unscaled": 9.726709314240268e+34,
+    "condition_scaled": 3494.235071032904,
+    "scaled_residual": 2.5017255182859744e-13,
+    "backward_error": 6.333648729636079e-33
+  },
+  "geometry_sensitivity": {
+    "max_polarization_anisotropy_percent": 1.3019947947881372,
+    "max_rotation_covariance_relative_difference": 1.0895450373889594e-15
+  },
+  "validation": {
+    "max_single_sphere_relative_error": 8.575725710387198e-16,
+    "large_separation_extinction_relative_difference": 1.3139962322143271e-05,
+    "max_global_extinction_closure_rel": 1.0785315910734467e-10,
+    "max_global_scattering_closure_rel": 9.220847777790956e-16
+  },
+  "software": {
+    "python": "3.13.5 (main, Jul 15 2026, 20:25:40) [GCC 14.2.0]",
+    "platform": "Linux-6.18.57-x86_64-with-glibc2.41",
+    "numpy": "2.3.5",
+    "pandas": "2.2.3"
+  },
+  "interpretation_limit": "The 1.8 nm spectrum is a nonconverged truncation stress test, not a final physical prediction. The central template, ligand/shell layers, exact coordinates, substrate, and quantum corrections are absent."
+}

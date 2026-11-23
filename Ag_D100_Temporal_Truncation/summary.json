@@ -1,0 +1,176 @@
+{
+  "benchmark_name": "Ag_D100_Mie_Anchored_Temporal_Truncation",
+  "scope": "Reduced-order temporal diagnostic anchored to exact Mie coefficients; not a 3D FDTD/FIT rerun and not integrated simulation-domain energy.",
+  "particle": {
+    "material": "Ag",
+    "diameter_nm": 100.0,
+    "host_refractive_index": 1.333,
+    "wavelength_min_nm": 300.0,
+    "wavelength_max_nm": 700.0,
+    "wavelength_step_nm": 1.0,
+    "maximum_multipole_order": 8,
+    "optical_constants": "Johnson-Christy 1972 subset supplied in package"
+  },
+  "exact_peak_summary": {
+    "extinction_peak_wavelength_nm": 389.0,
+    "extinction_peak_cross_section_nm2": 67195.47404822997,
+    "scattering_peak_wavelength_nm": 480.0,
+    "scattering_peak_cross_section_nm2": 55171.91112586704,
+    "absorption_peak_wavelength_nm": 388.0,
+    "absorption_peak_cross_section_nm2": 17694.98125653134,
+    "ED_peak_wavelength_nm": 481.0,
+    "ED_peak_cross_section_nm2": 54960.877432645844,
+    "EQ_peak_wavelength_nm": 388.0,
+    "EQ_peak_cross_section_nm2": 23887.98645996426,
+    "EO_peak_wavelength_nm": 369.0,
+    "EO_peak_cross_section_nm2": 117.45549274933687
+  },
+  "eq_half_maximum_summary": {
+    "peak_wavelength_nm": 388.4,
+    "peak_cross_section_nm2": 23943.608078267385,
+    "fwhm_wavelength_nm": 16.242833527123196,
+    "fwhm_energy_eV": 0.1335804851901492,
+    "fwhm_Q_energy": 23.89703946616498
+  },
+  "pole_fit_summary": {
+    "fit_success": true,
+    "fit_message": "`ftol` termination condition is satisfied.",
+    "fit_nfev": 7,
+    "fit_wavelength_min_nm": 350.0,
+    "fit_wavelength_max_nm": 430.0,
+    "polynomial_background_order": 3,
+    "residue_real_eV": 0.0034693785110968146,
+    "residue_imag_eV": 0.04012698705949311,
+    "resonance_energy_eV": 3.190405972526896,
+    "gamma_energy_eV": 0.06696409368422479,
+    "pole_energy_real_eV": 3.190405972526896,
+    "pole_energy_imag_eV": -0.06696409368422479,
+    "pole_wavelength_nm": 388.61574201166974,
+    "pole_Q": 23.821766240662814,
+    "amplitude_lifetime_fs": 9.829326743431453,
+    "energy_lifetime_fs": 4.914663371715727,
+    "complex_coefficient_fit_nrmse": 0.005911846629878501
+  },
+  "linear_prediction_summary": {
+    "noise_fraction_of_peak_amplitude": 0.001,
+    "sample_dt_fs": 0.05,
+    "sample_start_fs": 2.0,
+    "sample_end_fs": 14.0,
+    "number_of_samples": 241,
+    "resonance_estimate_eV": 3.1903809433635186,
+    "gamma_estimate_eV": 0.06712859165974708,
+    "Q_estimate": 23.763204802020265,
+    "residue_estimate_real_eV": 0.003489375016186443,
+    "residue_estimate_imag_eV": 0.040201761138123286,
+    "resonance_relative_error": -7.845134316122345e-06,
+    "gamma_relative_error": 0.0024565101455414676,
+    "Q_relative_error": -0.0024583164006784252,
+    "correction_observation_time_fs": 15.0,
+    "uncorrected_total_scattering_nrmse": 0.03954419046138965,
+    "corrected_total_scattering_nrmse": 0.00016529466225519499,
+    "uncorrected_eq_scattering_nrmse": 0.3067421827138672,
+    "corrected_eq_scattering_nrmse": 0.0012835880474517665
+  },
+  "selected_truncation_metrics": {
+    "10": {
+      "observation_time_fs": 10.0,
+      "modal_remaining_power_fraction": 0.13071611682273387,
+      "modal_remaining_power_dB": -8.836708621848866,
+      "predicted_ripple_spacing_eV": 0.4135667696604003,
+      "total_scattering_spectral_nrmse": 0.06440188869933428,
+      "eq_scattering_spectral_nrmse": 0.4997504679797107,
+      "far_band_ripple_peak_to_peak_over_total_peak": 0.0020270086842968395,
+      "total_scattering_peak_shift_nm": 0.0,
+      "eq_scattering_peak_shift_nm": -3.0
+    },
+    "20": {
+      "observation_time_fs": 20.0,
+      "modal_remaining_power_fraction": 0.017086703197214607,
+      "modal_remaining_power_dB": -17.673417243697735,
+      "predicted_ripple_spacing_eV": 0.20678338483020015,
+      "total_scattering_spectral_nrmse": 0.023977634011483232,
+      "eq_scattering_spectral_nrmse": 0.18600062828212385,
+      "far_band_ripple_peak_to_peak_over_total_peak": 0.0012375965700140068,
+      "total_scattering_peak_shift_nm": 0.0,
+      "eq_scattering_peak_shift_nm": 0.0
+    },
+    "40": {
+      "observation_time_fs": 40.0,
+      "modal_remaining_power_fraction": 0.0002919554261497039,
+      "modal_remaining_power_dB": -35.34683448739547,
+      "predicted_ripple_spacing_eV": 0.10339169241510007,
+      "total_scattering_spectral_nrmse": 0.003157467991518893,
+      "eq_scattering_spectral_nrmse": 0.024494093338064266,
+      "far_band_ripple_peak_to_peak_over_total_peak": 0.00017015280367499585,
+      "total_scattering_peak_shift_nm": 0.0,
+      "eq_scattering_peak_shift_nm": 0.0
+    },
+    "60": {
+      "observation_time_fs": 60.0,
+      "modal_remaining_power_fraction": 4.9885557134363e-06,
+      "modal_remaining_power_dB": -53.0202517310932,
+      "predicted_ripple_spacing_eV": 0.06892779494340004,
+      "total_scattering_spectral_nrmse": 0.00041281935876612887,
+      "eq_scattering_spectral_nrmse": 0.003202577969461223,
+      "far_band_ripple_peak_to_peak_over_total_peak": 2.2453359410211404e-05,
+      "total_scattering_peak_shift_nm": 0.0,
+      "eq_scattering_peak_shift_nm": 0.0
+    }
+  },
+  "window_taper_metrics": [
+    {
+      "observation_time_fs": 20.0,
+      "raised_cosine_taper_fs": 0.0,
+      "total_scattering_spectral_nrmse": 0.023977634011483232,
+      "eq_scattering_spectral_nrmse": 0.18600062828212385,
+      "far_band_ripple_peak_to_peak_over_total_peak": 0.0012375965700140068
+    },
+    {
+      "observation_time_fs": 20.0,
+      "raised_cosine_taper_fs": 2.0,
+      "total_scattering_spectral_nrmse": 0.02651815952928053,
+      "eq_scattering_spectral_nrmse": 0.20569890333076016,
+      "far_band_ripple_peak_to_peak_over_total_peak": 0.0010436299919831403
+    },
+    {
+      "observation_time_fs": 20.0,
+      "raised_cosine_taper_fs": 5.0,
+      "total_scattering_spectral_nrmse": 0.030860141914580235,
+      "eq_scattering_spectral_nrmse": 0.23947405772589006,
+      "far_band_ripple_peak_to_peak_over_total_peak": 0.0006397130468169599
+    },
+    {
+      "observation_time_fs": 20.0,
+      "raised_cosine_taper_fs": 10.0,
+      "total_scattering_spectral_nrmse": 0.03988341670262494,
+      "eq_scattering_spectral_nrmse": 0.3097491552375493,
+      "far_band_ripple_peak_to_peak_over_total_peak": 0.00012436850838999744
+    }
+  ],
+  "delayed_feedback_metrics": [
+    {
+      "delayed_copy_amplitude": 0.03,
+      "round_trip_delay_fs": 25.0,
+      "predicted_ripple_spacing_eV": 0.1654267078641601,
+      "measured_ripple_spacing_eV": 0.16641768141902613,
+      "relative_spacing_error": 0.005990408487605017,
+      "total_scattering_spectral_nrmse": 0.005340721697491694
+    },
+    {
+      "delayed_copy_amplitude": 0.03,
+      "round_trip_delay_fs": 40.0,
+      "predicted_ripple_spacing_eV": 0.10339169241510007,
+      "measured_ripple_spacing_eV": 0.10251923384657369,
+      "relative_spacing_error": -0.008438381732099058,
+      "total_scattering_spectral_nrmse": 0.005447539963821941
+    }
+  ],
+  "execution": {
+    "seconds": 4.565896126000098,
+    "python": "3.13.5",
+    "platform": "Linux-6.18.44-x86_64-with-glibc2.41",
+    "processor": "",
+    "pid": 3444,
+    "git_commit": "not-a-git-repository"
+  }
+}

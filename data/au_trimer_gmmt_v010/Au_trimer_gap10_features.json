@@ -1,0 +1,43 @@
+{
+  "extinction_peaks": [
+    [
+      538.0,
+      71185.58731177228
+    ],
+    [
+      678.0,
+      121092.24948071994
+    ]
+  ],
+  "extinction_dip": [
+    576.0,
+    62454.00651272602
+  ],
+  "all_extinction_maxima": [
+    [
+      538.0,
+      71185.58731177228
+    ],
+    [
+      678.0,
+      121092.24948071994
+    ]
+  ],
+  "all_extinction_minima": [
+    [
+      576.0,
+      62454.00651272602
+    ]
+  ],
+  "all_scattering_maxima": [
+    [
+      682.0,
+      112481.02243144065
+    ]
+  ],
+  "all_scattering_minima": [],
+  "elapsed_s": 27.660406756000157,
+  "unknown_count": 720,
+  "max_global_extinction_closure_rel": 1.0785315910734467e-10,
+  "max_global_scattering_closure_rel": 9.220847777790956e-16
+}
